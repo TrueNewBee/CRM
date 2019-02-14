@@ -1,28 +1,29 @@
 2019-2-14 15:41:39
-³¬¼¶ÓÃ»§: yuan  yuan123
-crmÏîÄ¿:
-	1. ÒıÈëstark×é¼ş:	
-		1. °Ñstark×é¼ş¿¼¹ıÀ´!
-		2. ÔÚsettingÀïÃæ×¢²ástarkµÄapp  'stark.apps.StarkConfig',
-		3. ÔÚcrmÄ¿Â¼ÖĞ´´½¨stark.py
-		4. ÔÚ¸Ã±íÖĞµ¼ÈëstarkÄ£¿é,È»ºó×¢²á±íºÍÅäÖÃÀà
+è¶…çº§ç”¨æˆ·: yuan  yuan123
+ä½¿ç”¨äº†python3.7å’ŒDjango1.11.1å¼€å‘çš„CRMé¡¹ç›®
+crmé¡¹ç›®:
+	1. å¼•å…¥starkç»„ä»¶:	
+		1. æŠŠstarkç»„ä»¶è€ƒè¿‡æ¥!
+		2. åœ¨settingé‡Œé¢æ³¨å†Œstarkçš„app  'stark.apps.StarkConfig',
+		3. åœ¨crmç›®å½•ä¸­åˆ›å»ºstark.py
+		4. åœ¨è¯¥è¡¨ä¸­å¯¼å…¥starkæ¨¡å—,ç„¶åæ³¨å†Œè¡¨å’Œé…ç½®ç±»
 
 		site.register(UserInfo, UserConfig) 
 	
-	2. ÒıÈërbacµÄÓÃ»§ÈÏÖ¤×é¼ş
+	2. å¼•å…¥rbacçš„ç”¨æˆ·è®¤è¯ç»„ä»¶
 	
-		1. °Ñrbac×é¼şµ¼Èë¹ıÀ´
-		2. ÔÚsettingÖĞ×¢²áÒ»ÏÂ²¢ÇÒÔÚÖĞ¼ä¼şÖĞ×¢²áÒ»ÏÂ 	
+		1. æŠŠrbacç»„ä»¶å¯¼å…¥è¿‡æ¥
+		2. åœ¨settingä¸­æ³¨å†Œä¸€ä¸‹å¹¶ä¸”åœ¨ä¸­é—´ä»¶ä¸­æ³¨å†Œä¸€ä¸‹ 	
 		'rbac.apps.RbacConfig',
 		'rbac.service.rbac.ValidPermission'
-		3. Í¨¹ıstark ·ÃÎÊ¶ÔÓ¦urlÀ´Ìí¼ÓÓÃ»§Êı¾İ
+		3. é€šè¿‡stark è®¿é—®å¯¹åº”urlæ¥æ·»åŠ ç”¨æˆ·æ•°æ®
 		4. stark/rbac/permissiongroup
 		   stark/rbac/user
 		   stark/rbac/permission
 	           stark/rbac/role
-		5. °ÑcrmµÄUserInfo±íÓërbacµÄuser±íÒ»¶ÔÒ»¹ØÁª
-			¼´ÔÚcrmµÄUserInfo±íÖĞÌí¼Ó
+		5. æŠŠcrmçš„UserInfoè¡¨ä¸rbacçš„userè¡¨ä¸€å¯¹ä¸€å…³è”
+			å³åœ¨crmçš„UserInfoè¡¨ä¸­æ·»åŠ 
 			user = models.OneToOneField(to=User, null=True)
 		
-		6. Ìí¼ÓÍêÊı¾İºóĞèÒªÔÚcrmÓÃ»§±íÖĞµÄÊı¾İ±à¼­Ò»ÏÂ,ÊµÏÖÒÔÒ»¶ÔÓ¦
-		7. È»ºó¾Í¿ÉÒÔÊµÏÖµÇÈëºóĞèÒªÈ¨ÏŞÀ²!!!!
+		6. æ·»åŠ å®Œæ•°æ®åéœ€è¦åœ¨crmç”¨æˆ·è¡¨ä¸­çš„æ•°æ®ç¼–è¾‘ä¸€ä¸‹,å®ç°ä»¥ä¸€å¯¹åº”
+		7. ç„¶åå°±å¯ä»¥å®ç°ç™»å…¥åéœ€è¦æƒé™å•¦!!!!
